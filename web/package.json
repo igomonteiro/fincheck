@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.0.8",
+    "@headlessui/react": "^1.7.16",
     "@hookform/resolvers": "^3.2.0",
     "@radix-ui/react-icons": "^1.3.0",
     "@tanstack/react-query": "^4.32.6",
+    "@tanstack/react-query-devtools": "^4.32.6",
     "axios": "^1.4.0",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
