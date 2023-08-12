@@ -11,7 +11,6 @@ import {
   HttpStatus,
   Query,
   ParseIntPipe,
-  ParseEnumPipe,
 } from '@nestjs/common';
 import { ActiveUserId } from 'src/shared/decorators/ActiveUserId';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
