@@ -8,6 +8,16 @@ export function useTransactions() {
     isEnd: false,
   });
 
+  const [isFiltersModalOpen, setIsFiltersModalOpen] = useState(false);
+
+  function handleOpenFiltersModal() {
+    setIsFiltersModalOpen(true);
+  }
+
+  function handleCloseFiltersModal() {
+    setIsFiltersModalOpen(false);
+  }
+
   return {
     sliderState,
     setSliderState,
@@ -15,5 +25,8 @@ export function useTransactions() {
     isInitialLoading: false,
     isLoading: false,
     transactions: [],
+    isFiltersModalOpen,
+    handleOpenFiltersModal,
+    handleCloseFiltersModal,
   };
 }
