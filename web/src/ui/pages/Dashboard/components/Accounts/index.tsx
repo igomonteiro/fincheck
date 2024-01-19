@@ -18,6 +18,7 @@ export function Accounts() {
     toggleValuesVisibility,
     isLoading,
     accounts,
+    openNewAccountModal,
   } = useAccounts();
   return (
     <div className="flex h-full w-full flex-col rounded-2xl bg-teal-900 px-4 py-8 md:p-10">
@@ -108,7 +109,10 @@ export function Accounts() {
                     Minhas contas
                   </strong>
                 </div>
-                <button className="mt-4 flex h-52 flex-col items-center justify-center gap-4 rounded-2xl border-2 border-dashed border-teal-600 text-white transition-colors duration-200 hover:bg-teal-800">
+                <button
+                  className="mt-4 flex h-52 flex-col items-center justify-center gap-4 rounded-2xl border-2 border-dashed border-teal-600 text-white transition-colors duration-200 hover:bg-teal-800"
+                  onClick={openNewAccountModal}
+                >
                   <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-dashed">
                     <PlusIcon className="h-6 w-6" />
                   </div>

@@ -3,7 +3,8 @@ import { useWindowWidth } from "../../../../../app/hooks/useWindowWidth";
 import { useDashboard } from "../DashboardContext/useDashboard";
 
 export function useAccounts() {
-  const { areValuesVisible, toggleValuesVisibility } = useDashboard();
+  const { areValuesVisible, toggleValuesVisibility, openNewAccountModal } =
+    useDashboard();
   const windowWidth = useWindowWidth();
   const [sliderState, setSliderState] = useState({
     isBeginning: true,
@@ -18,5 +19,6 @@ export function useAccounts() {
     toggleValuesVisibility,
     isLoading: false,
     accounts: [],
+    openNewAccountModal,
   };
 }
